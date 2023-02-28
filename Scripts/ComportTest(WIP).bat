@@ -1,0 +1,1 @@
+REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\COM Name Arbiter" /v ComDB /t REG_BINARY /d 0

@@ -34,7 +34,7 @@ foreach ($Computer in $Computers) {
 
             #### TASK USERID Filter ####
             #Ignore tasks with specified users and tasks with no user
-            if ($user -notin "SYSTEM", "S-1-5-18", "S-1-5-19", "NT Authority\System", "S-1-5-20" -and ![string]::IsNullOrEmpty($user)) {
+            if ($user -notin "SYSTEM", "S-1-5-18", "S-1-5-19", "S-1-5-20", "NT Authority\System" -and ![string]::IsNullOrEmpty($user)) {
                 $Details.ComputerName = $Computer
                 $Details.Task = $task.Name
                 $Details.User = $user

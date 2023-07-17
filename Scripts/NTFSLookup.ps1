@@ -1,6 +1,3 @@
-﻿#Written by Cade Daley
-#Property of Georg Fischer LLC
-
 #Prompts User for Location and runs command to get NTFS Permission information of the location
 $Path = Read-Host -Prompt 'Please enter the Path of the Folder you would like to see NTFS Permissions on'
 (get-acl $Path).access | ft IdentityReference,FileSystemRights,AccessControlType,IsInherited,InheritanceFlags -Autosize

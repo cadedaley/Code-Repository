@@ -1,3 +1,5 @@
+# This task adds the current user with Full Control to the specified folder. Very niche.
+
 ﻿# Get the current user
 $currentUser = [Security.Principal.WindowsIdentity]::GetCurrent().Name
 

@@ -1,4 +1,4 @@
-# This scrip takes a subnets.csv file and then checks those subnets for open 9100 ports.
+# This script takes a subnets.csv file and then checks those subnets for open 9100 ports.
 # Upon finding an open port, it will send a Zebra Printer command in SGD/ZPL to gather inventory information and export it to a XLSX file
 
 import socket
@@ -84,6 +84,9 @@ with ThreadPoolExecutor() as executor:
     data = []
     for future in futures:
         data.extend(future.result())
+
+store_data_in_excel(data, excel_file)
+print(f"Data stored in: {excel_file}")
 
 store_data_in_excel(data, excel_file)
 print(f"Data stored in: {excel_file}")

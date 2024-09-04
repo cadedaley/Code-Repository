@@ -1,3 +1,6 @@
+# This script takes a ip_addresses.csv file and then checks those IP Addresses for open 9100 ports.
+# Upon finding an IP, it will send a Zebra Printer command in SGD/ZPL to gather inventory information and export it to a XLSX file
+
 import socket
 import os
 import csv

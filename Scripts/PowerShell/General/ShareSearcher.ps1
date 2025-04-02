@@ -1,4 +1,6 @@
-﻿param(
+# Checks Path for defined overly permissive folders
+ 
+ param(
     ### Enter Target Path Here ###
     [string]$TargetPath = "\\Enter\Path\Here" # Edit Here!
 )

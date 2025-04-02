@@ -1,4 +1,5 @@
-﻿#Depending on the inputed parameters, this task can take VERY long time to run!
+#CHECKS Scheduled Tasks from Server Operating Systems
+#Depending on the inputed parameters, this task can take VERY long time to run!
 
 #Gets the Date and Time of when the Task is ran.
 $Date = Get-Date -f "yyyy-MM-dd"
